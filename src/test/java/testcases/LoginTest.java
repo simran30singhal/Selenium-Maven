@@ -41,14 +41,14 @@ public class LoginTest extends BaseClass {
 		
 		//report.endTest(test);
 	}
-	
-	/*@Test
+	/*
+	@Test
 	  @Parameters({"Param1","Param2"})
 	 public void ParameterizedTest(String UserNameVal, String PasswordVal) {
 		
 		LoginPage obj=new LoginPage();
 		obj.LoginFunction(UserNameVal,PasswordVal);
-	}*/
+	}
 	
 	@Test
 	public void ExternalDataTest() {
@@ -58,5 +58,5 @@ public class LoginTest extends BaseClass {
 		
 		LoginPage obj=new LoginPage();
 		obj.LoginFunction(UserNameVal,PasswordVal);
-	}
+	}*/
 }

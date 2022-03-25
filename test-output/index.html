@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +115,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.LoginTest" hash-for-method="LoginSuccessTest">LoginSuccessTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testcases.LoginTest" hash-for-method="ParameterizedTest(xyz@abc.com, Abc@12345)">ParameterizedTest(xyz@abc.com, Abc@12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,6 +159,14 @@
                   <a name="LoginSuccessTest">
                   </a> <!-- LoginSuccessTest -->
                   <span class="method-name">LoginSuccessTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ParameterizedTest(xyz@abc.com, Abc@12345)">
+                  </a> <!-- ParameterizedTest(xyz@abc.com, Abc@12345) -->
+                  <span class="method-name">ParameterizedTest</span>
+                  <span class="parameters">(xyz@abc.com, Abc@12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,24 +225,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginSuccessTest')
 data.setCell(0, 2, 'testcases.LoginTest')
-data.setCell(0, 3, 3466);
+data.setCell(0, 3, 3395);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ExternalDataTest')
+data.setCell(1, 1, 'ParameterizedTest')
 data.setCell(1, 2, 'testcases.LoginTest')
-data.setCell(1, 3, 2956);
+data.setCell(1, 3, 3369);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LoginFailureTest')
 data.setCell(2, 2, 'testcases.LoginTest')
-data.setCell(2, 3, 2855);
+data.setCell(2, 3, 3248);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ExternalDataTest')
+data.setCell(3, 2, 'testcases.LoginTest')
+data.setCell(3, 3, 3223);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -262,43 +279,55 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(public void testcases.LoginTest.ExternalDataTest())</span>
-                <span class="method-start">742 ms</span>
+                <span class="method-start">584 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ExternalDataTest</span>
-                <span class="method-start">2368 ms</span>
+                <span class="method-start">2165 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">5333 ms</span>
+                <span class="method-start">5390 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(public void testcases.LoginTest.LoginFailureTest())</span>
-                <span class="method-start">5414 ms</span>
+                <span class="method-start">5480 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFailureTest</span>
-                <span class="method-start">6722 ms</span>
+                <span class="method-start">6662 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">9578 ms</span>
+                <span class="method-start">9912 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp(public void testcases.LoginTest.LoginSuccessTest())</span>
-                <span class="method-start">9653 ms</span>
+                <span class="method-start">9993 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginSuccessTest</span>
-                <span class="method-start">11105 ms</span>
+                <span class="method-start">11256 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">14573 ms</span>
+                <span class="method-start">14653 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp(public void testcases.LoginTest.ParameterizedTest(java.lang.String,java.lang.String))</span>
+                <span class="method-start">14729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ParameterizedTest(xyz@abc.com, Abc@12345)</span>
+                <span class="method-start">16246 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">19616 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">DataTearDown</span>
-                <span class="method-start">14708 ms</span>
+                <span class="method-start">19710 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
